@@ -1,0 +1,192 @@
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 80px;
+}
+
+.contact .contact__form {
+  margin: 50px;
+  padding: 50px;
+  border: #101414 double 2px;
+  width: 50%;
+  font-size: 1.1em;
+}
+
+.contact .contact__form .contact__form__input .contact__form__input__text {
+  font-family: 'Poppins', sans-serif;
+  height: 30px;
+  width: 50%;
+  padding-left: 5px;
+}
+
+.contact .contact__form .contact__form__input .contact__form__input__comentario {
+  font-family: 'Poppins', sans-serif;
+  height: 250px;
+  width: 75%;
+  line-height: 3;
+}
+
+.contact .contact__form .contact__form__input__buttons {
+  text-align: center;
+}
+
+.contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--reset {
+  padding: 1px;
+  background-color: #2b2c2c;
+  color: #f7f6f1;
+  width: 20%;
+  margin: 3px;
+}
+
+.contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--send {
+  padding: 1px;
+  background-color: #2b2c2c;
+  color: #f7f6f1;
+  width: 20%;
+  margin: 3px;
+}
+
+.contact .contact__form .contact__form__thanks {
+  text-align: center;
+  margin-top: 30px;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Mobile First*/
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+  header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 50px;
+  }
+  .footer {
+    padding: 1px;
+    height: 420px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-area: footer;
+  }
+  .footer .footer__titulo {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .footer .footer__contact {
+    margin-right: 5px;
+    margin-left: 10px;
+    line-height: 2rem;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+  }
+  .footer__redes {
+    margin: 0 auto;
+    margin-bottom: 2px;
+    margin-right: 70px;
+    font-size: .9em;
+  }
+  .contact {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contact .contact__form {
+    margin: 10px;
+    padding: 10px;
+    border: #101414 double 2px;
+    width: 90%;
+    height: 950px;
+    font-size: 1.1em;
+    line-height: 60px;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__text {
+    width: 90%;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__select {
+    width: 80%;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__select .contact__form__input__select__option {
+    font-size: .7em;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__novedades {
+    font-size: 1.1em;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__comentario {
+    margin-left: 6px;
+    height: 250px;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__buttons--reset {
+    padding: 2px;
+    width: 25%;
+    margin: 6px;
+  }
+  .contact .contact__form .contact__form__input .contact__form__input__buttons--send {
+    padding: 2px;
+    width: 25%;
+    margin: 6px;
+  }
+}
+/*# sourceMappingURL=contacto.css.map */
