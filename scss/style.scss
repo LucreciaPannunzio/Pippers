@@ -283,6 +283,15 @@ footer {
         align-items: center;
         padding-bottom: 20px;
         font-size: 1.1rem;
+        .header__menu__container {
+            .ul__li {
+                margin-left: 80px;
+                padding: 10px;
+            }
+            .header__menu__container__button {
+                margin-right: 60px;
+            }
+        }   
     }
     .contenedorMain{
         grid-template-columns: 100%;

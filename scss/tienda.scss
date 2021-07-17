@@ -73,6 +73,15 @@ $colortitle: #101414;
         align-items: center;
         padding-bottom: 20px;
         font-size: 1.1rem;
+        .header__menu__container {
+            .ul__li {
+                margin-left: 80px;
+                padding: 10px;
+            }
+            .header__menu__container__button {
+                margin-right: 60px;
+            }
+        }    
     }
     .pedido {
         height: auto;
@@ -81,6 +90,8 @@ $colortitle: #101414;
         .pedido__cont {
             display: flex;
             flex-direction: column;
+            text-align: center;
+            margin-top: 1px;
             .pedido__cont__tienda {
                 width: 100%;
                 .pedido__cont__tienda__titulo {
@@ -98,9 +109,13 @@ $colortitle: #101414;
             .pedido__galeria__card {
                 .pedido__galeria__card__img {
                     width: 10rem;
+                    margin-left: 20px;
+                }
+                .pedido__galeria__card__text {
+                    font-size: 1.1rem;
                 }
                 .pedido__galeria__card__p {
-                    font-size: 1rem;
+                    font-size: .9rem;
                 }
             }
         }

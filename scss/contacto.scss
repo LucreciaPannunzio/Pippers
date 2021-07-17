@@ -86,6 +86,15 @@ $colortitle: #101414;
         align-items: center;
         padding-bottom: 20px;
         font-size: 1.1rem;
+        header__menu__container {
+            .ul__li {
+                margin-left: 80px;
+                padding: 10px;
+            }
+            .header__menu__container__button {
+                margin-right: 60px;
+            }
+        }       
     }
     .footer {
         padding: 1px;
@@ -143,14 +152,10 @@ $colortitle: #101414;
                     height: 250px;
                 }
                 .contact__form__input__buttons--reset{
-                    padding: 2px;
-                    width: 25%;
-                    margin: 6px;
+                    width: 20%;
                 }
                 .contact__form__input__buttons--send{
-                    padding: 2px;
-                    width: 25%;
-                    margin: 6px;
+                    width: 20%;
                 }
             }
         }

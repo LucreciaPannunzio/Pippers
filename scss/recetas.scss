@@ -73,6 +73,15 @@ $colortitle: #101414;
         align-items: center;
         padding-bottom: 20px;
         font-size: 1.1rem;
+        header__menu__container {
+            .ul__li {
+                margin-left: 80px;
+                padding: 10px;
+            }
+            .header__menu__container__button {
+                margin-right: 60px;
+            }
+        }         
     }
     .recetas {
         height: auto;
@@ -83,7 +92,12 @@ $colortitle: #101414;
             width: auto;
             .recetas__cont__titulo {
                 font-size: 1.3rem;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            .recetas__cont__titulo--size{
+                margin-left: 15px;
+                font-size: 1.1rem;
             }
             .recetas__cont--ingr {
                 margin: 5px;

@@ -70,6 +70,10 @@
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
+    header .header__menu__container .ul__li {
+      text-align: center; }
+    header .header__menu__container .header__menu__container__button {
+      margin-right: 60px; }
   .aboutUs {
     height: 1500px;
     font-size: 1rem;
@@ -82,7 +86,8 @@
       line-height: 30px; }
     .aboutUs .aboutUs__galeria {
       display: flex;
-      flex-direction: column; }
+      flex-direction: row;
+      margin-top: 10px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img {
         padding: 10px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img img {
@@ -166,13 +171,20 @@
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
+    header .header__menu__container .ul__li {
+      margin-left: 80px;
+      padding: 10px; }
+    header .header__menu__container .header__menu__container__button {
+      margin-right: 60px; }
   .pedido {
     height: auto;
     margin: 10px;
     padding: 10px; }
     .pedido .pedido__cont {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      text-align: center;
+      margin-top: 1px; }
       .pedido .pedido__cont .pedido__cont__tienda {
         width: 100%; }
         .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__titulo {
@@ -184,9 +196,12 @@
     .pedido .pedido__galeria {
       margin-top: 20px; }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
-        width: 10rem; }
+        width: 10rem;
+        margin-left: 20px; }
+      .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__text {
+        font-size: 1.1rem; }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__p {
-        font-size: 1rem; }
+        font-size: .9rem; }
   .footer {
     padding: 1px;
     height: 420px;
@@ -268,6 +283,11 @@
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
+    header header__menu__container .ul__li {
+      margin-left: 80px;
+      padding: 10px; }
+    header header__menu__container .header__menu__container__button {
+      margin-right: 60px; }
   .recetas {
     height: auto;
     line-height: 25px;
@@ -277,7 +297,11 @@
       width: auto; }
       .recetas .recetas__cont .recetas__cont__titulo {
         font-size: 1.3rem;
-        margin-bottom: 10px; }
+        margin-bottom: 20px;
+        margin-top: 10px; }
+      .recetas .recetas__cont .recetas__cont__titulo--size {
+        margin-left: 15px;
+        font-size: 1.1rem; }
       .recetas .recetas__cont .recetas__cont--ingr {
         margin: 5px;
         padding: 5px;
@@ -384,6 +408,11 @@
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
+    header header__menu__container .ul__li {
+      margin-left: 80px;
+      padding: 10px; }
+    header header__menu__container .header__menu__container__button {
+      margin-right: 60px; }
   .footer {
     padding: 1px;
     height: 420px;
@@ -430,13 +459,9 @@
         margin-left: 6px;
         height: 250px; }
       .contact .contact__form .contact__form__input .contact__form__input__buttons--reset {
-        padding: 2px;
-        width: 25%;
-        margin: 6px; }
+        width: 20%; }
       .contact .contact__form .contact__form__input .contact__form__input__buttons--send {
-        padding: 2px;
-        width: 25%;
-        margin: 6px; } }
+        width: 20%; } }
 
 /*Variables*/
 /*Mixin*/
@@ -650,6 +675,11 @@ footer {
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
+    header .header__menu__container .ul__li {
+      margin-left: 80px;
+      padding: 10px; }
+    header .header__menu__container .header__menu__container__button {
+      margin-right: 60px; }
   .contenedorMain {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);

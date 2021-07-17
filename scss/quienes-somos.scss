@@ -84,6 +84,14 @@ $colortitle: #101414;
         align-items: center;
         padding-bottom: 20px;
         font-size: 1.1rem;
+        .header__menu__container {
+            .ul__li {
+                text-align: center;
+            }
+            .header__menu__container__button {
+                margin-right: 60px;
+            }
+        }   
     }
     .aboutUs {
         height: 1500px;
@@ -101,7 +109,8 @@ $colortitle: #101414;
         }
         .aboutUs__galeria {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            margin-top: 10px;
             .aboutUs__galeria__img {
                 padding: 10px;
             }
