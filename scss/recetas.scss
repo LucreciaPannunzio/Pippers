@@ -21,39 +21,40 @@ $colortitle: #101414;
     height: 900px;
     display: flex;
     flex-direction: column;
-    @include margin(20px, 20px);
+    @include margin(40px, 40px);
     .recetas__cont{
         .recetas__cont__titulo {
+            font-size: 1.5em;
             font-weight: 600;
-            text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            margin-left: 30px;
         }
         .recetas__cont__titulo--size{
-            @include margin(5px, 5px);
-            margin-bottom: 20px;
-            font-size: 1em;
-            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 25px;
+            font-size: 1.1em;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
         }
         .recetas__cont--ingr {
-            @include margin(10px, 10px);
+            @include margin(15px, 15px);
         }
         .recetas__cont--pasos{
-            @include margin(10px, 10px);
+            @include margin(15px, 15px);
         }
         .recetas__cont__list li{
             list-style-type: circle;
         }
         .recetas__cont img{
             width: 500px;
-            opacity: .7;
             margin-top: 10px;
-            margin-left: 100px;
+            margin-left: 40px;
             margin-right: 50px;
+            object-fit: cover;
             transition: all 1s;
             &:hover {
-                opacity: 1;
+                -webkit-transform:scale(1.1);
+                transform:scale(1.1);
             }
         }
     }

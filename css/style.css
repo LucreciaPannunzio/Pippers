@@ -123,10 +123,13 @@
   color: #2b2c2c;
   letter-spacing: 1px;
   line-height: 30px;
-  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 20px; }
   .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__titulo {
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 30px; }
   .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__link:hover {
@@ -137,6 +140,7 @@
     display: flex;
     justify-content: space-around; }
     .pedido .pedido__galeria .pedido__galeria__card {
+      text-align: center;
       transition: all 1s; }
       .pedido .pedido__galeria .pedido__galeria__card:hover {
         -webkit-transform: scale(1.1);
@@ -145,10 +149,7 @@
         width: 12rem;
         padding-top: 5px;
         padding-left: 5px;
-        opacity: .7;
-        transition: all 1s; }
-        .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img:hover {
-          opacity: 1; }
+        object-fit: cover; }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__p {
         color: #086964;
         font-weight: bold; }
@@ -223,37 +224,37 @@
   height: 900px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
-  padding: 20px; }
+  margin: 40px;
+  padding: 40px; }
   .recetas .recetas__cont .recetas__cont__titulo {
+    font-size: 1.5em;
     font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 40px;
+    margin-left: 30px; }
   .recetas .recetas__cont .recetas__cont__titulo--size {
-    margin: 5px;
-    padding: 5px;
-    margin-bottom: 20px;
-    font-size: 1em;
-    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 1.1em;
     font-family: 'Poppins', sans-serif;
     font-weight: 600; }
   .recetas .recetas__cont .recetas__cont--ingr {
-    margin: 10px;
-    padding: 10px; }
+    margin: 15px;
+    padding: 15px; }
   .recetas .recetas__cont .recetas__cont--pasos {
-    margin: 10px;
-    padding: 10px; }
+    margin: 15px;
+    padding: 15px; }
   .recetas .recetas__cont .recetas__cont__list li {
     list-style-type: circle; }
   .recetas .recetas__cont .recetas__cont img {
     width: 500px;
-    opacity: .7;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 40px;
     margin-right: 50px;
+    object-fit: cover;
     transition: all 1s; }
     .recetas .recetas__cont .recetas__cont img:hover {
-      opacity: 1; }
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
 
 /*Mobile First*/
 @media only screen and (max-width: 768px) {
@@ -326,6 +327,8 @@
   line-height: 80px; }
   .contact .contact__form {
     margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     padding: 50px;
     border: #101414 double 2px;
     width: 50%;
@@ -341,19 +344,18 @@
       width: 75%;
       line-height: 3; }
     .contact .contact__form .contact__form__input__buttons {
-      text-align: center; }
+      text-align: center;
+      line-height: 1; }
       .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--reset {
-        padding: 1px;
         background-color: #2b2c2c;
         color: #f7f6f1;
-        width: 20%;
-        margin: 3px; }
+        width: 10%;
+        height: 60px; }
       .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--send {
-        padding: 1px;
         background-color: #2b2c2c;
         color: #f7f6f1;
-        width: 20%;
-        margin: 3px; }
+        width: 10%;
+        height: 60px; }
     .contact .contact__form .contact__form__thanks {
       text-align: center;
       margin-top: 30px;

@@ -33,7 +33,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .pedido .pedido__galeria .pedido__galeria__img {
