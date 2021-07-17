@@ -8,13 +8,12 @@
   width: 100%;
   height: 900px;
   color: #101414;
-  font-size: 1.5em;
+  font-size: 1.2em;
   letter-spacing: 1px;
   line-height: 25px;
   display: flex;
   flex-wrap: wrap; }
   .aboutUs .aboutUs__container {
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,7 +43,7 @@
     flex-wrap: wrap;
     background: #f0f5f5; }
     .aboutUs .aboutUs__galeria .aboutUs__galeria__img {
-      padding: 50px; }
+      padding: 15px; }
     .aboutUs .aboutUs__galeria .aboutUs__galeria__img img {
       width: 270px;
       height: 300px;
@@ -78,16 +77,21 @@
     height: 1500px;
     font-size: 1rem;
     line-height: 20px; }
-    .aboutUs .aboutUs__container .aboutUs__container__titulo {
-      font-size: 1.5rem; }
-    .aboutUs .aboutUs__container .aboutUs__container__description {
-      margin-left: 25px;
-      margin-right: 25px;
-      line-height: 30px; }
+    .aboutUs .aboutUs__container {
+      margin-top: 10px;
+      margin-left: 10px; }
+      .aboutUs .aboutUs__container .aboutUs__container__titulo {
+        font-size: 1.5rem;
+        margin-bottom: 0px; }
+      .aboutUs .aboutUs__container .aboutUs__container__description {
+        margin-left: 25px;
+        margin-right: 25px;
+        line-height: 30px;
+        margin-top: 0px; }
     .aboutUs .aboutUs__galeria {
       display: flex;
       flex-direction: row;
-      margin-top: 10px; }
+      margin-top: 60px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img {
         padding: 10px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img img {
@@ -124,7 +128,7 @@
   box-sizing: border-box; }
 
 .pedido {
-  height: 1400px;
+  height: 1500px;
   color: #2b2c2c;
   letter-spacing: 1px;
   line-height: 30px;
@@ -133,13 +137,16 @@
   margin-left: 50px;
   margin-right: 50px;
   padding: 20px; }
-  .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__titulo {
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__link:hover {
-    color: white;
-    background-color: black; }
+  .pedido .pedido__cont .pedido__cont__tienda {
+    margin-top: 30px; }
+    .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__titulo {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__link:hover {
+      color: white;
+      background-color: black; }
   .pedido .pedido__galeria {
     margin-top: 50px;
     display: flex;
@@ -242,13 +249,14 @@
   margin: 40px;
   padding: 40px; }
   .recetas .recetas__cont .recetas__cont__titulo {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 600;
-    margin-bottom: 40px;
-    margin-left: 30px; }
+    margin-bottom: 30px;
+    margin-left: 40px; }
   .recetas .recetas__cont .recetas__cont__titulo--size {
     margin-bottom: 25px;
     margin-top: 25px;
+    margin-left: 20px;
     font-size: 1.1em;
     font-family: 'Poppins', sans-serif;
     font-weight: 600; }
@@ -374,15 +382,16 @@
         background-color: #2b2c2c;
         color: #f7f6f1;
         width: 10%;
-        height: 60px; }
+        height: 50px; }
       .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--send {
         background-color: #2b2c2c;
         color: #f7f6f1;
         width: 10%;
-        height: 60px; }
+        height: 50px; }
     .contact .contact__form .contact__form__thanks {
       text-align: center;
       margin-top: 30px;
+      font-size: 1.1em;
       animation-name: aparecer;
       animation-timing-function: ease;
       animation-duration: 5s;
@@ -408,10 +417,10 @@
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
-    header header__menu__container .ul__li {
+    header .header__menu__container .ul__li {
       margin-left: 80px;
       padding: 10px; }
-    header header__menu__container .header__menu__container__button {
+    header .header__menu__container .header__menu__container__button {
       margin-right: 60px; }
   .footer {
     padding: 1px;
@@ -448,16 +457,17 @@
       font-size: 1.1em;
       line-height: 60px; }
       .contact .contact__form .contact__form__input .contact__form__input__text {
-        width: 90%; }
+        width: 80%; }
       .contact .contact__form .contact__form__input .contact__form__input__select {
         width: 80%; }
         .contact .contact__form .contact__form__input .contact__form__input__select .contact__form__input__select__option {
-          font-size: .7em; }
+          font-size: .6em; }
       .contact .contact__form .contact__form__input .contact__form__input__novedades {
         font-size: 1.1em; }
       .contact .contact__form .contact__form__input .contact__form__input__comentario {
-        margin-left: 6px;
-        height: 250px; }
+        margin-left: 10px;
+        height: 250px;
+        padding: 5px; }
       .contact .contact__form .contact__form__input .contact__form__input__buttons--reset {
         width: 20%; }
       .contact .contact__form .contact__form__input .contact__form__input__buttons--send {
@@ -518,8 +528,8 @@ body {
     color: #101414;
     letter-spacing: 0.5px;
     border: black 2.5px double;
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
     grid-area: productos; }
     .contenedorMain .productos .productos__titulo {
       font-size: 1.8rem;
@@ -580,8 +590,9 @@ body {
     text-transform: initial;
     border: #101414 2.5px double;
     margin: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px;
+    padding-bottom: 30px;
     grid-area: tips; }
     .contenedorMain .tips .tips__titulo {
       font-size: 1.8rem;
@@ -685,25 +696,35 @@ footer {
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "productos" "promos" "tips"; }
     .contenedorMain .productos {
+      width: 92%;
       margin: 10px;
       padding: 5px; }
       .contenedorMain .productos .productos__titulo {
         font-size: 1.5rem; }
-      .contenedorMain .productos .productos__contenedor .productos__contenedor__img {
-        width: 100%;
-        height: 390px;
-        margin: 1px;
-        padding: 1px; }
-      .contenedorMain .productos .productos__contenedor .productos__contenedor__img__text {
-        font-size: .9rem;
-        text-align: center; }
-    .contenedorMain .promos .promos__titulo {
-      font-size: 1.2rem; }
-    .contenedorMain .promos .promos__novedades__text {
-      font-size: .2rem; }
+      .contenedorMain .productos .productos__contenedor {
+        padding: 10px;
+        margin: 10px; }
+        .contenedorMain .productos .productos__contenedor .productos__contenedor__img {
+          width: 100%;
+          height: 400px;
+          margin: 1px;
+          padding: 1px; }
+          .contenedorMain .productos .productos__contenedor .productos__contenedor__img img {
+            width: 200px; }
+        .contenedorMain .productos .productos__contenedor .productos__contenedor__img__text {
+          font-size: .9rem;
+          text-align: center; }
+    .contenedorMain .promos {
+      width: 92%;
+      margin: 10px; }
+      .contenedorMain .promos .promos__titulo {
+        font-size: 1.2rem; }
+      .contenedorMain .promos .promos__novedades__text {
+        font-size: .2rem; }
     .contenedorMain .tips {
-      margin: 0 auto;
-      padding: 5px; }
+      width: 92%;
+      margin: 10px;
+      padding: 2px; }
       .contenedorMain .tips .tips__titulo {
         font-size: 1.5rem; }
       .contenedorMain .tips .tips__row {
@@ -720,7 +741,7 @@ footer {
             text-align: start; }
           .contenedorMain .tips .tips__row .tips__row__cont .tips__row__cont__img {
             width: 30%;
-            margin: 45px; }
+            margin: 30px; }
   .footer {
     padding: 1px;
     height: 420px;

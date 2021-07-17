@@ -10,7 +10,7 @@ $colortitle: #101414;
 }
 
 .pedido {
-    height: 1400px;
+    height: 1500px;
     color: #2b2c2c;
     letter-spacing: 1px;
     line-height: 30px;
@@ -21,8 +21,10 @@ $colortitle: #101414;
     padding: 20px;
     .pedido__cont{
         .pedido__cont__tienda{
+            margin-top: 30px;
             .pedido__cont__tienda__titulo{
-                font-size: 1.5em;
+                font-size: 1.4em;
+                font-weight: 600;
                 margin-top: 30px;
                 margin-bottom: 30px;
             }

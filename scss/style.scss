@@ -92,8 +92,8 @@ body {
         color:#101414;
         letter-spacing: 0.5px;
         border: black 2.5px double;
-        margin: 20px;
-        padding: 10px;
+        margin: 10px;
+        padding: 5px;
         @include grid(productos);
         .productos__titulo {
             @include titles();
@@ -166,8 +166,9 @@ body {
         text-transform:initial;
         border: #101414 2.5px double;
         margin: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         padding: 20px;
+        padding-bottom: 30px;
         @include grid(tips);
         .tips__titulo {
             font-size: 1.8rem;
@@ -301,17 +302,23 @@ footer {
             "promos"
             "tips";
         .productos{
+            width: 92%;
             margin: 10px;
             padding: 5px;
             .productos__titulo{
                 font-size: 1.5rem;
             }
             .productos__contenedor{
+                padding: 10px;
+                margin: 10px;
                 .productos__contenedor__img{
                     width: 100%;
-                    height: 390px;
+                    height: 400px;
                     margin: 1px;
                     padding: 1px;
+                    img {
+                        width: 200px;
+                    }
                 }
                 .productos__contenedor__img__text{
                     font-size: .9rem;
@@ -320,6 +327,8 @@ footer {
             }
         }
         .promos {
+            width: 92%;
+            margin: 10px;
             .promos__titulo {
                 font-size: 1.2rem;
             }
@@ -328,8 +337,9 @@ footer {
             }
         }    
         .tips {
-            margin: 0 auto;
-            padding: 5px;
+            width: 92%;
+            margin: 10px;
+            padding: 2px;
             .tips__titulo {
                 font-size: 1.5rem;
             }
@@ -348,7 +358,7 @@ footer {
                     }
                     .tips__row__cont__img{
                         width: 30%;
-                        margin: 45px;
+                        margin: 30px;
                     }
                 }
             }

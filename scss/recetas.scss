@@ -24,14 +24,15 @@ $colortitle: #101414;
     @include margin(40px, 40px);
     .recetas__cont{
         .recetas__cont__titulo {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-weight: 600;
-            margin-bottom: 40px;
-            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-left: 40px;
         }
         .recetas__cont__titulo--size{
             margin-bottom: 25px;
             margin-top: 25px;
+            margin-left: 20px;
             font-size: 1.1em;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;

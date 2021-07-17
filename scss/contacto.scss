@@ -42,13 +42,13 @@ $colortitle: #101414;
                 background-color: #2b2c2c;
                 color: #f7f6f1;
                 width: 10%; 
-                height: 60px;
+                height: 50px;
             }
             .contact__form__input__buttons--send{
                 background-color: #2b2c2c;
                 color: #f7f6f1; 
                 width: 10%;
-                height: 60px;
+                height: 50px;
             }
         }
         .contact__form__thanks {
@@ -65,6 +65,7 @@ $colortitle: #101414;
             }
             text-align: center;
             margin-top: 30px;
+            font-size: 1.1em;
             animation-name: aparecer;
             animation-timing-function: ease;
             animation-duration: 5s;
@@ -86,7 +87,7 @@ $colortitle: #101414;
         align-items: center;
         padding-bottom: 20px;
         font-size: 1.1rem;
-        header__menu__container {
+        .header__menu__container {
             .ul__li {
                 margin-left: 80px;
                 padding: 10px;
@@ -136,20 +137,21 @@ $colortitle: #101414;
             line-height: 60px;
             .contact__form__input{
                 .contact__form__input__text {
-                    width: 90%;
+                    width: 80%;
                 }
                 .contact__form__input__select {
                     width: 80%;
                     .contact__form__input__select__option{
-                        font-size: .7em;
+                        font-size: .6em;
                     }
                 }
                 .contact__form__input__novedades{
                     font-size: 1.1em;
                 }
                 .contact__form__input__comentario{
-                    margin-left: 6px;
+                    margin-left: 10px;
                     height: 250px;
+                    padding: 5px;
                 }
                 .contact__form__input__buttons--reset{
                     width: 20%;
