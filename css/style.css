@@ -6,9 +6,8 @@
 
 .aboutUs {
   width: 100%;
-  height: 900px;
   color: #101414;
-  font-size: 1.2em;
+  font-size: 1rem;
   letter-spacing: 1px;
   line-height: 25px;
   display: flex;
@@ -20,7 +19,7 @@
     margin-top: 30px;
     margin-left: 30px; }
     .aboutUs .aboutUs__container .aboutUs__container__titulo {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       text-align: center;
       font-weight: bold;
       margin-top: 40px;
@@ -33,7 +32,6 @@
       letter-spacing: 1.5px;
       text-align: center; }
   .aboutUs .aboutUs__galeria {
-    height: 50%;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -45,8 +43,8 @@
     .aboutUs .aboutUs__galeria .aboutUs__galeria__img {
       padding: 15px; }
     .aboutUs .aboutUs__galeria .aboutUs__galeria__img img {
-      width: 270px;
-      height: 300px;
+      width: 250px;
+      height: 280px;
       padding: 15px;
       margin: 15px;
       object-fit: cover;
@@ -74,15 +72,13 @@
     header .header__menu__container .header__menu__container__button {
       margin-right: 60px; }
   .aboutUs {
-    height: 1500px;
     font-size: 1rem;
     line-height: 20px; }
     .aboutUs .aboutUs__container {
       margin-top: 10px;
       margin-left: 10px; }
       .aboutUs .aboutUs__container .aboutUs__container__titulo {
-        font-size: 1.5rem;
-        margin-bottom: 0px; }
+        font-size: 1.5rem; }
       .aboutUs .aboutUs__container .aboutUs__container__description {
         margin-left: 25px;
         margin-right: 25px;
@@ -91,7 +87,8 @@
     .aboutUs .aboutUs__galeria {
       display: flex;
       flex-direction: row;
-      margin-top: 60px; }
+      margin-top: 40px;
+      padding-top: 20px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img {
         padding: 10px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img img {
@@ -128,7 +125,6 @@
   box-sizing: border-box; }
 
 .pedido {
-  height: 1500px;
   color: #2b2c2c;
   letter-spacing: 1px;
   line-height: 30px;
@@ -243,7 +239,6 @@
   color: #101414;
   letter-spacing: 1px;
   line-height: 30px;
-  height: 2000px;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -253,7 +248,7 @@
     font-weight: 600;
     margin-bottom: 20px;
     margin-top: 40px;
-    margin-left: 120px; }
+    text-align: center; }
   .recetas .recetas__cont .recetas__cont__titulo--size {
     margin-bottom: 25px;
     margin-top: 25px;
@@ -270,11 +265,11 @@
   .recetas .recetas__cont .recetas__cont__list li {
     list-style-type: circle; }
   .recetas .recetas__cont .recetas__cont__img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 220px;
     object-fit: cover;
     margin-top: 30px;
-    margin-left: 250px;
+    margin-left: 210px;
     opacity: .9;
     transition: all 1s; }
     .recetas .recetas__cont .recetas__cont__img:hover {
@@ -293,10 +288,10 @@
     align-items: center;
     padding-bottom: 20px;
     font-size: 1.1rem; }
-    header header__menu__container .ul__li {
+    header .header__menu__container .ul__li {
       margin-left: 80px;
       padding: 10px; }
-    header header__menu__container .header__menu__container__button {
+    header .header__menu__container .header__menu__container__button {
       margin-right: 60px; }
   .recetas {
     height: auto;
@@ -306,9 +301,10 @@
     .recetas .recetas__cont {
       width: auto; }
       .recetas .recetas__cont .recetas__cont__titulo {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 20px;
-        margin-top: 10px; }
+        margin-top: 10px;
+        margin-left: 50px; }
       .recetas .recetas__cont .recetas__cont__titulo--size {
         margin-left: 15px;
         font-size: 1.1rem; }
@@ -321,8 +317,8 @@
         padding: 5px;
         font-size: 1.2rem; }
       .recetas .recetas__cont .recetas__cont img {
-        width: 250px;
-        margin-left: 40px;
+        width: 220px;
+        margin-left: 50px;
         margin-right: 10px;
         margin-bottom: 30px; }
   .footer {
@@ -486,11 +482,12 @@ body {
   background-color: #f7f6f1;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 1rem; }
+  font-size: .9rem; }
 
 .header {
   background-color: #2b2c2c;
   width: 100%;
+  font-size: .9rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -532,6 +529,7 @@ body {
     border: black 2.5px double;
     margin: 10px;
     padding: 5px;
+    padding-bottom: 20px;
     grid-area: productos; }
     .contenedorMain .productos .productos__titulo {
       font-size: 1.8rem;
@@ -539,23 +537,26 @@ body {
       font-weight: bold;
       margin-top: 40px;
       margin-bottom: 30px; }
-    .contenedorMain .productos .productos__contenedor .productos__contenedor__img {
-      padding: 10px;
-      width: 200px;
-      height: 400px;
-      object-fit: cover;
-      transition: all 1s; }
-      .contenedorMain .productos .productos__contenedor .productos__contenedor__img:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.1); }
-      .contenedorMain .productos .productos__contenedor .productos__contenedor__img .productos__contenedor__img__text {
-        text-align: center; }
+    .contenedorMain .productos .productos__contenedor {
+      padding-top: 50px; }
+      .contenedorMain .productos .productos__contenedor .productos__contenedor__img {
+        padding: 10px;
+        width: 200px;
+        height: 350px;
+        object-fit: cover;
+        transition: all 1s; }
+        .contenedorMain .productos .productos__contenedor .productos__contenedor__img:hover {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.1); }
+        .contenedorMain .productos .productos__contenedor .productos__contenedor__img .productos__contenedor__img__text {
+          text-align: center; }
   .contenedorMain .promos {
     color: #f7f6f1;
     background-color: #2b2c2c;
     text-transform: initial;
     letter-spacing: 1px;
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
     grid-area: promos;
     display: flex;
     display: block; }
@@ -579,9 +580,10 @@ body {
       .contenedorMain .promos .promos__novedades .promos__novedades__text {
         color: #f7f6f1;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
-        margin-top: 20px; }
+        margin-top: 20px;
+        padding: 10px; }
       .contenedorMain .promos .promos__novedades .promos__novedades__logo {
         transition: all 1s; }
         .contenedorMain .promos .promos__novedades .promos__novedades__logo:hover {
@@ -635,8 +637,8 @@ footer {
   background-color: #2b2c2c;
   color: #f7f6f1;
   letter-spacing: 1px;
-  padding: 8px;
-  height: 249px;
+  font-size: .9rem;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   grid-area: footer;
@@ -646,26 +648,26 @@ footer {
   grid-template-areas: "contactanos contactanos" "texto redes" "texto redes"; }
   footer .footer__titulo {
     color: #f7f6f1;
-    font-size: 19px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
     font-weight: 600;
     justify-content: center;
     grid-area: contactanos; }
   footer .footer__contact {
-    margin-right: 10px;
-    margin-left: 100px;
+    margin-right: 30px;
+    margin-left: 60px;
     margin-bottom: 50px;
     line-height: 2rem;
-    padding: 10px;
+    padding: 5px;
     grid-area: texto; }
     footer .footer__contact .footer__contact__link {
       text-decoration: underline;
       color: #fffbdf; }
       footer .footer__contact .footer__contact__link:hover {
-        color: teal; }
+        background-color: black; }
   footer .footer__redes {
     grid-area: redes; }
     footer .footer__redes .footer__redes__list li {
@@ -698,9 +700,7 @@ footer {
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "productos" "promos" "tips"; }
     .contenedorMain .productos {
-      width: 92%;
-      margin: 10px;
-      padding: 5px; }
+      width: 88%; }
       .contenedorMain .productos .productos__titulo {
         font-size: 1.5rem; }
       .contenedorMain .productos .productos__contenedor {
@@ -708,7 +708,6 @@ footer {
         margin: 10px; }
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img {
           width: 100%;
-          height: 400px;
           margin: 1px;
           padding: 1px; }
           .contenedorMain .productos .productos__contenedor .productos__contenedor__img img {
@@ -717,14 +716,14 @@ footer {
           font-size: .9rem;
           text-align: center; }
     .contenedorMain .promos {
-      width: 92%;
+      width: 88%;
       margin: 10px; }
       .contenedorMain .promos .promos__titulo {
         font-size: 1.2rem; }
       .contenedorMain .promos .promos__novedades__text {
         font-size: .2rem; }
     .contenedorMain .tips {
-      width: 92%;
+      width: 88%;
       margin: 10px;
       padding: 2px; }
       .contenedorMain .tips .tips__titulo {
@@ -746,7 +745,6 @@ footer {
             margin: 30px; }
   .footer {
     padding: 1px;
-    height: 420px;
     display: flex;
     flex-direction: column;
     grid-area: footer; }
@@ -756,14 +754,13 @@ footer {
       font-weight: 600;
       font-size: 1.3rem; }
     .footer .footer__contact {
-      margin-right: 5px;
-      margin-left: 10px;
-      line-height: 2rem;
-      padding: 10px;
-      font-size: 1rem;
-      margin-bottom: 0px; }
+      margin-right: 7px;
+      margin-left: 7px;
+      margin-bottom: 0px;
+      padding: 15px;
+      font-size: 1rem; }
   .footer__redes {
     margin: 0 auto;
     margin-bottom: 2px;
-    margin-right: 70px;
+    margin-right: 80px;
     font-size: .9em; } }

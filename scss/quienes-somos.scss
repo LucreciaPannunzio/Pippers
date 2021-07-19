@@ -11,9 +11,8 @@ $colortitle: #101414;
 
 .aboutUs {
     width: 100%;
-    height: 900px;
     color: $colortitle;
-    font-size: 1.2em;
+    font-size: 1rem;
     letter-spacing: 1px;
     line-height: 25px;
     display: flex;
@@ -25,7 +24,7 @@ $colortitle: #101414;
         margin-top: 30px;
         margin-left: 30px;
         .aboutUs__container__titulo{
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             text-align: center;
             font-weight: bold;
             margin-top: 40px;
@@ -41,7 +40,6 @@ $colortitle: #101414;
         }
     }
     .aboutUs__galeria {
-        height: 50%;
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -54,8 +52,8 @@ $colortitle: #101414;
             padding: 15px;
         }
         .aboutUs__galeria__img img {
-            width: 270px;
-            height: 300px;
+            width: 250px;
+            height: 280px;
             padding: 15px;
             margin: 15px;
             object-fit: cover;
@@ -93,7 +91,6 @@ $colortitle: #101414;
         }   
     }
     .aboutUs {
-        height: 1500px;
         font-size: 1rem;
         line-height: 20px;
         .aboutUs__container {
@@ -101,7 +98,6 @@ $colortitle: #101414;
             margin-left: 10px;
             .aboutUs__container__titulo {
                 font-size: 1.5rem;
-                margin-bottom: 0px;
             }
             .aboutUs__container__description {
                 margin-left: 25px;
@@ -113,7 +109,8 @@ $colortitle: #101414;
         .aboutUs__galeria {
             display: flex;
             flex-direction: row;
-            margin-top: 60px;
+            margin-top: 40px;
+            padding-top: 20px;
             .aboutUs__galeria__img {
                 padding: 10px;
             }
