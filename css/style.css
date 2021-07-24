@@ -304,7 +304,7 @@
         font-size: 1.2rem;
         margin-bottom: 20px;
         margin-top: 10px;
-        margin-left: 50px; }
+        text-align: center; }
       .recetas .recetas__cont .recetas__cont__titulo--size {
         margin-left: 15px;
         font-size: 1.1rem; }
@@ -694,7 +694,7 @@ footer {
       margin-left: 80px;
       padding: 10px; }
     header .header__menu__container .header__menu__container__button {
-      margin-right: 60px; }
+      margin-right: 65px; }
   .contenedorMain {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
@@ -720,14 +720,14 @@ footer {
           font-size: .9rem;
           text-align: center; }
     .contenedorMain .promos {
-      width: 88%;
+      width: 95%;
       margin: 10px; }
       .contenedorMain .promos .promos__titulo {
         font-size: 1.2rem; }
       .contenedorMain .promos .promos__novedades__text {
         font-size: .2rem; }
     .contenedorMain .tips {
-      width: 88%;
+      width: 95%;
       margin: 10px;
       padding: 2px; }
       .contenedorMain .tips .tips__titulo {
