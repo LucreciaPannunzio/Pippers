@@ -191,11 +191,11 @@
       .pedido .pedido__cont .pedido__cont__tienda {
         width: 100%; }
         .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__titulo {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 600; }
         .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__text {
-          font-size: 1.3rem;
-          line-height: 25px; }
+          font-size: 1.1rem;
+          line-height: 23px; }
     .pedido .pedido__galeria {
       margin-top: 20px; }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
@@ -299,12 +299,12 @@
     margin: 10px;
     padding: 10px; }
     .recetas .recetas__cont {
-      width: auto; }
+      width: auto;
+      justify-content: center; }
       .recetas .recetas__cont .recetas__cont__titulo {
         font-size: 1.2rem;
         margin-bottom: 20px;
-        margin-top: 10px;
-        text-align: center; }
+        margin-top: 10px; }
       .recetas .recetas__cont .recetas__cont__titulo--size {
         margin-left: 15px;
         font-size: 1.1rem; }
@@ -694,7 +694,7 @@ footer {
       margin-left: 80px;
       padding: 10px; }
     header .header__menu__container .header__menu__container__button {
-      margin-right: 65px; }
+      margin-right: 70px; }
   .contenedorMain {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
@@ -746,7 +746,9 @@ footer {
             text-align: start; }
           .contenedorMain .tips .tips__row .tips__row__cont .tips__row__cont__img {
             width: 30%;
-            margin: 30px; }
+            margin: 30px;
+            margin-left: 45px;
+            margin-bottom: 45px; }
   .footer {
     padding: 1px;
     display: flex;
