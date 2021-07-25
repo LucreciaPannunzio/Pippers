@@ -70,7 +70,8 @@
     header .header__menu__container .ul__li {
       text-align: center; }
     header .header__menu__container .header__menu__container__button {
-      margin-right: 60px; }
+      margin-right: 65px;
+      margin-bottom: 30px; }
   .aboutUs {
     font-size: 1rem;
     line-height: 20px; }
@@ -149,15 +150,21 @@
     justify-content: space-around; }
     .pedido .pedido__galeria .pedido__galeria__card {
       text-align: center;
+      box-shadow: #6d6b6b;
+      -webkit-box-shadow: 2px 2px 4px #6d6b6b;
+      -moz-box-shadow: 2px 2px 4px #6d6b6b;
       transition: all 1s; }
       .pedido .pedido__galeria .pedido__galeria__card:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1); }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
         width: 12rem;
-        padding-top: 5px;
-        padding-left: 5px;
-        object-fit: cover; }
+        margin-left: 7px;
+        margin-top: 7px;
+        object-fit: cover;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b; }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__p {
         color: #086964;
         font-weight: bold; }
@@ -178,7 +185,8 @@
       margin-left: 80px;
       padding: 10px; }
     header .header__menu__container .header__menu__container__button {
-      margin-right: 60px; }
+      margin-right: 65px;
+      margin-bottom: 30px; }
   .pedido {
     height: auto;
     margin: 10px;
@@ -198,13 +206,15 @@
           line-height: 23px; }
     .pedido .pedido__galeria {
       margin-top: 20px; }
-      .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
-        width: 10rem;
-        margin-left: 20px; }
-      .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__text {
-        font-size: 1.1rem; }
-      .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__p {
-        font-size: .9rem; }
+      .pedido .pedido__galeria .pedido__galeria__card {
+        background-color: #f1f0f0; }
+        .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
+          width: 10rem;
+          margin-left: 20px; }
+        .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__text {
+          font-size: 1.1rem; }
+        .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__p {
+          font-size: .9rem; }
   .footer {
     padding: 1px;
     height: 420px;
@@ -271,6 +281,9 @@
     margin-top: 30px;
     margin-left: 210px;
     opacity: .9;
+    box-shadow: #6d6b6b;
+    -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+    -moz-box-shadow: 2px 2px 6px #6d6b6b;
     transition: all 1s; }
     .recetas .recetas__cont .recetas__cont__img:hover {
       -webkit-transform: scale(1.1);
@@ -419,7 +432,8 @@
       margin-left: 80px;
       padding: 10px; }
     header .header__menu__container .header__menu__container__button {
-      margin-right: 60px; }
+      margin-right: 65px;
+      margin-bottom: 30px; }
   .footer {
     padding: 1px;
     height: 420px;
@@ -590,10 +604,11 @@ body {
           -webkit-transform: scale(1.2);
           transform: scale(1.1); }
   .contenedorMain .tips {
+    width: 99%;
     color: #101414;
     text-transform: initial;
     border: #101414 2.5px double;
-    margin: 20px;
+    margin: 10px;
     margin-bottom: 40px;
     padding: 20px;
     padding-bottom: 30px;
@@ -625,6 +640,9 @@ body {
           padding: 10px;
           font-size: 18px; }
         .contenedorMain .tips .tips__row .tips__row__cont .tips__row__cont__img {
+          box-shadow: #6d6b6b;
+          -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+          -moz-box-shadow: 2px 2px 6px #6d6b6b;
           transition: all 1s;
           object-fit: cover; }
           .contenedorMain .tips .tips__row .tips__row__cont .tips__row__cont__img:hover {
@@ -694,13 +712,18 @@ footer {
       margin-left: 80px;
       padding: 10px; }
     header .header__menu__container .header__menu__container__button {
-      margin-right: 70px; }
+      margin-right: 65px;
+      margin-bottom: 30px; }
   .contenedorMain {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "productos" "promos" "tips"; }
     .contenedorMain .productos {
-      width: 95%; }
+      width: 95%;
+      border: none;
+      box-shadow: #6d6b6b;
+      -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+      -moz-box-shadow: 2px 2px 6px #6d6b6b; }
       .contenedorMain .productos .productos__titulo {
         font-size: 1.5rem; }
       .contenedorMain .productos .productos__contenedor {
@@ -708,20 +731,27 @@ footer {
         margin: 10px; }
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img {
           width: 100%;
-          height: 280px;
+          height: 300px;
           margin: 1px;
           margin-top: 20px;
           padding: 1px;
-          align-items: center; }
+          align-items: center;
+          background-color: #f8f2f2; }
           .contenedorMain .productos .productos__contenedor .productos__contenedor__img img {
-            width: 150px;
-            height: 170px; }
+            width: 170px;
+            height: 210px;
+            box-shadow: #444242;
+            -webkit-box-shadow: 2px 2px 6px #444242;
+            -moz-box-shadow: 2px 2px 6px #444242; }
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img__text {
           font-size: .9rem;
           text-align: center; }
     .contenedorMain .promos {
       width: 95%;
-      margin: 10px; }
+      margin: 10px;
+      box-shadow: #2b2c2c;
+      -webkit-box-shadow: 2px 2px 6px #2b2c2c;
+      -moz-box-shadow: 2px 2px 6px #2b2c2c; }
       .contenedorMain .promos .promos__titulo {
         font-size: 1.2rem; }
       .contenedorMain .promos .promos__novedades__text {
@@ -729,7 +759,10 @@ footer {
     .contenedorMain .tips {
       width: 95%;
       margin: 10px;
-      padding: 2px; }
+      padding: 2px;
+      box-shadow: #6d6b6b;
+      -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+      -moz-box-shadow: 2px 2px 6px #6d6b6b; }
       .contenedorMain .tips .tips__titulo {
         font-size: 1.5rem; }
       .contenedorMain .tips .tips__row {
@@ -748,7 +781,10 @@ footer {
             width: 30%;
             margin: 30px;
             margin-left: 45px;
-            margin-bottom: 45px; }
+            margin-bottom: 45px;
+            box-shadow: #444242;
+            -webkit-box-shadow: 2px 2px 6px #444242;
+            -moz-box-shadow: 2px 2px 6px #444242; }
   .footer {
     padding: 1px;
     display: flex;

@@ -53,6 +53,9 @@ $colortitle: #101414;
             margin-top: 30px;
             margin-left: 210px;
             opacity: .9;
+            box-shadow: #6d6b6b;
+            -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+            -moz-box-shadow: 2px 2px 6px #6d6b6b;
             transition: all 1s;
             &:hover {
                 -webkit-transform:scale(1.1);
