@@ -33,6 +33,7 @@ $colortitle: #101414;
                 height: 250px;
                 width: 75%;
                 line-height: 3;
+                padding-left: 10px;
             }
         }
         .contact__form__input__buttons{
@@ -41,7 +42,7 @@ $colortitle: #101414;
             .contact__form__input__buttons--reset{
                 background-color: #2b2c2c;
                 color: #f7f6f1;
-                width: 55px;
+                width: 64px;
                 height: 45px;
                 margin-right: 10px;
                 &:hover {
@@ -52,7 +53,7 @@ $colortitle: #101414;
             .contact__form__input__buttons--send{
                 background-color: #2b2c2c;
                 color: #f7f6f1; 
-                width: 55px;
+                width: 64px;
                 height: 45px;
                 margin-left: 10px;
                 &:hover {

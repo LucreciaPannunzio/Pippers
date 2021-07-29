@@ -22,8 +22,8 @@
       font-size: 1.6rem;
       text-align: center;
       font-weight: bold;
-      margin-top: 40px;
-      margin-bottom: 30px; }
+      margin-top: 30px;
+      margin-bottom: 50px; }
     .aboutUs .aboutUs__container .aboutUs__container__description {
       margin-left: 50px;
       margin-right: 50px;
@@ -79,7 +79,8 @@
       margin-top: 10px;
       margin-left: 10px; }
       .aboutUs .aboutUs__container .aboutUs__container__titulo {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        margin-top: 40px; }
       .aboutUs .aboutUs__container .aboutUs__container__description {
         margin-left: 25px;
         margin-right: 25px;
@@ -93,8 +94,9 @@
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img {
         padding: 10px; }
       .aboutUs .aboutUs__galeria .aboutUs__galeria__img img {
-        width: 170px;
-        height: 200px; }
+        width: 200px;
+        height: 250px;
+        filter: none; }
   .footer {
     padding: 1px;
     height: 420px;
@@ -134,6 +136,12 @@
   margin-left: 50px;
   margin-right: 50px;
   padding: 20px; }
+  .pedido .pedido__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px; }
   .pedido .pedido__cont .pedido__cont__tienda {
     margin-top: 30px; }
     .pedido .pedido__cont .pedido__cont__tienda .pedido__cont__tienda__titulo {
@@ -191,6 +199,10 @@
     height: auto;
     margin: 10px;
     padding: 10px; }
+    .pedido .pedido__titulo {
+      font-size: 1.1rem;
+      margin-top: 30px;
+      margin-bottom: 10px; }
     .pedido .pedido__cont {
       display: flex;
       flex-direction: column;
@@ -205,7 +217,7 @@
           font-size: 1.1rem;
           line-height: 23px; }
     .pedido .pedido__galeria {
-      margin-top: 20px; }
+      margin-top: 10px; }
       .pedido .pedido__galeria .pedido__galeria__card {
         background-color: #f1f0f0; }
         .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
@@ -279,7 +291,7 @@
     height: 220px;
     object-fit: cover;
     margin-top: 30px;
-    margin-left: 210px;
+    margin-left: 290px;
     opacity: .9;
     box-shadow: #6d6b6b;
     -webkit-box-shadow: 2px 2px 6px #6d6b6b;
@@ -308,7 +320,7 @@
       margin-right: 75px; }
   .recetas {
     height: auto;
-    line-height: 25px;
+    line-height: 35px;
     margin: 10px;
     padding: 10px; }
     .recetas .recetas__cont {
@@ -385,14 +397,15 @@
       font-family: 'Poppins', sans-serif;
       height: 250px;
       width: 75%;
-      line-height: 3; }
+      line-height: 3;
+      padding-left: 10px; }
     .contact .contact__form .contact__form__input__buttons {
       text-align: center;
       line-height: 1; }
       .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--reset {
         background-color: #2b2c2c;
         color: #f7f6f1;
-        width: 55px;
+        width: 64px;
         height: 45px;
         margin-right: 10px; }
         .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--reset:hover {
@@ -401,7 +414,7 @@
       .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--send {
         background-color: #2b2c2c;
         color: #f7f6f1;
-        width: 55px;
+        width: 64px;
         height: 45px;
         margin-left: 10px; }
         .contact .contact__form .contact__form__input__buttons .contact__form__input__buttons--send:hover {
@@ -763,6 +776,8 @@ footer {
       -moz-box-shadow: 2px 2px 6px #2b2c2c; }
       .contenedorMain .promos .promos__titulo {
         font-size: 1.2rem; }
+      .contenedorMain .promos .promos__contenedor .promos__contenedor__promo {
+        opacity: 1; }
       .contenedorMain .promos .promos__novedades__text {
         font-size: .2rem; }
     .contenedorMain .tips {

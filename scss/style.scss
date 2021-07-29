@@ -359,6 +359,11 @@ footer {
             .promos__titulo {
                 font-size: 1.2rem;
             }
+            .promos__contenedor {
+                .promos__contenedor__promo {
+                    opacity: 1;
+                }
+            }
             .promos__novedades__text {
                 font-size: .2rem;
             }

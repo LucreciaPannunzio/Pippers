@@ -18,6 +18,13 @@ $colortitle: #101414;
     margin-left: 50px;
     margin-right: 50px;
     padding: 20px;
+    .pedido__titulo {
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
     .pedido__cont{
         .pedido__cont__tienda{
             margin-top: 30px;
@@ -94,6 +101,11 @@ $colortitle: #101414;
         height: auto;
         margin: 10px;
         padding: 10px;
+        .pedido__titulo {
+            font-size: 1.1rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
         .pedido__cont {
             display: flex;
             flex-direction: column;
@@ -112,13 +124,12 @@ $colortitle: #101414;
             }
         }
         .pedido__galeria {
-            margin-top: 20px;
+            margin-top: 10px;
             .pedido__galeria__card {
                 background-color: #f1f0f0;
                 .pedido__galeria__card__img {
                     width: 10rem;
                     margin-left: 20px;
-                    
                 }
                 .pedido__galeria__card__text {
                     font-size: 1.1rem;
