@@ -1,5 +1,5 @@
 /*Variables*/
-$bgcolor: #f7f6f1;
+$bgcolor: #faf6e9;
 $bgcolor2: #2b2c2c;
 $colortitle: #101414;
 
@@ -11,6 +11,7 @@ $colortitle: #101414;
 
 .aboutUs {
     width: 100%;
+    background-color:#ffffff;
     color: $colortitle;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -23,6 +24,13 @@ $colortitle: #101414;
         justify-content: center;
         margin-top: 30px;
         margin-left: 30px;
+        margin-right: 30px;
+        background-image: url(../Imagenes/bgcolorwhite.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: #d6d6d3;
+        -webkit-box-shadow: 2px 3px 6px #d6d6d3;
+        -moz-box-shadow: 2px 3px 6px #d6d6d3;
         .aboutUs__container__titulo{
             font-size: 1.6rem;
             text-align: center;
@@ -47,7 +55,7 @@ $colortitle: #101414;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-        background: rgb(240,245,245);
+        background-color:#ffffff;
         .aboutUs__galeria__img{
             padding: 15px;
         }
@@ -96,13 +104,13 @@ $colortitle: #101414;
         line-height: 20px;
         .aboutUs__container {
             margin-top: 10px;
-            margin-left: 10px;
+            margin-left: 22px;
             .aboutUs__container__titulo {
                 font-size: 1.5rem;
                 margin-top: 40px;
             }
             .aboutUs__container__description {
-                margin-left: 25px;
+                margin-left: 30px;
                 margin-right: 25px;
                 line-height: 30px;
                 margin-top: 0px;

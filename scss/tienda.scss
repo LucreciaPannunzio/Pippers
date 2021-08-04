@@ -10,6 +10,7 @@ $colortitle: #101414;
 }
 
 .pedido {
+    background-color:#ffffff;
     color: #2b2c2c;
     letter-spacing: 1px;
     line-height: 30px;
@@ -26,6 +27,7 @@ $colortitle: #101414;
         margin-bottom: 15px;
     }
     .pedido__cont{
+        background-image: url(../Imagenes/bgcolorwhite.png);
         .pedido__cont__tienda{
             margin-top: 30px;
             .pedido__cont__tienda__titulo{
@@ -46,7 +48,11 @@ $colortitle: #101414;
         margin-top: 50px;
         display: flex;
         justify-content: space-around;
+        background-image: url(../Imagenes/bgcolorwhite.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         .pedido__galeria__card {
+            background: #fcf7f7;
             text-align: center;
             box-shadow: #6d6b6b;
             -webkit-box-shadow: 2px 2px 4px #6d6b6b;
@@ -69,6 +75,11 @@ $colortitle: #101414;
                 color: rgb(8, 105, 100);
                 font-weight: bold;
             }    
+            .pedido__galeria__card__button {
+                background-color: #50CB93;
+                border: none;
+                color: black;
+            }
         }
     }
 }

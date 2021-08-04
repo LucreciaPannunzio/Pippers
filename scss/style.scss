@@ -29,7 +29,7 @@ $color: #f7f6f1;
 }
 
 body {
-    background-color: $bgcolor;
+    background-color:#ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: .9rem;
@@ -38,16 +38,18 @@ body {
 .header {
     background-color: $bgcolor2;
     width: 100%;
-    font-size: .9rem;
+    font-size: 1.1rem;
+    font-weight: 400;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     @include grid(header);
-        .header__imgLogo {
+    .header__imgLogo {
         border-radius: 90%;
         margin-left: 20px;
-        }
+        width: 180px;
+    }
     .header__menu {
         background-color: $bgcolor2;
         margin: 0 auto;
@@ -68,18 +70,13 @@ body {
                         color: #2b2c2c;
                     }
                 }
-                .ul__li__link--contact {
-                    &:hover{
-                        background-color: rgb(197, 247, 236);
-                    }
-                   
-                }
             }
         }
     }
 }
 
 .contenedorMain {
+    background-color:#ffffff;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -90,9 +87,14 @@ body {
         "productos productos promos"
         "tips tips tips";
     .productos {
+        background-image: url(../Imagenes/bgcolorwhite.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
         color:#101414;
         letter-spacing: 0.5px;
-        border: black 2.5px double;
         margin: 10px;
         padding: 5px;
         padding-bottom: 20px;
@@ -105,6 +107,7 @@ body {
             .productos__contenedor__img{
                 width: 200px;
                 height: 350px;
+                background: #fdf6f6;
                 transition: all 1s;
                 &:hover{
                     -webkit-transform: scale(1.2);
@@ -120,14 +123,23 @@ body {
                 .productos__contenedor__img__text{
                     text-align: center;
                 }    
+                .productos__contenedor__img__button {
+                    background-color: #50CB93;
+                    border: none;
+                    color: black;
+                }
             }
         }
         
     }
-    
     .promos {
-        color:#f7f6f1;
-        background-color: #2b2c2c;
+        background-image: url(../Imagenes/bgcolorwhite.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        color:#101414;
         text-transform: initial;
         letter-spacing: 1px;
         margin: 10px;
@@ -138,23 +150,25 @@ body {
         .promos__titulo {
             @include titles();
         }
+        .promos__badge {
+            margin-left: 10px;
+            font-size: 1.1rem;
+            background-color: #50CB93;
+            color: black;
+        }
         .promos__contenedor{
             .promos__contenedor__promo {
                 display: flex;
                 padding: 10px;
-                opacity: .8;
                 justify-content: center;
                 transition: all 1s;
-                &:hover{
-                    opacity: 1;
-                }
             } 
         } 
         .promos__novedades {
             text-align: center;
             line-height: 60px;
             .promos__novedades__text {
-                color: #f7f6f1;
+                color: #101414;
                 text-align: center;
                 font-size: 1rem;
                 font-weight: 400;
@@ -173,9 +187,14 @@ body {
 
     .tips {
         width: 99%;
+        background-image: url(../Imagenes/bgcolorwhite.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
         color: #101414;
         text-transform:initial;
-        border: #101414 2.5px double;
         margin: 10px;
         margin-bottom: 40px;
         padding: 20px;
@@ -190,8 +209,6 @@ body {
         }
         .tips__row {
             text-align: center;
-            letter-spacing: 1px;
-            line-height: 25px;
             margin-left: 20px;
             margin-right: 20px;
             padding-left: 50px;
@@ -199,6 +216,7 @@ body {
                 flex-wrap: wrap;
                 margin-right: 0px;
                 padding: 15px;
+                letter-spacing: 1px;
                 .tips__row__cont__text {
                     color: #101414;
                     margin: 10px;
@@ -209,6 +227,7 @@ body {
                     text-align: justify;
                     padding: 10px;
                     font-size: 18px;
+                    line-height: 30px;
                 }
                 .tips__row__cont__img{
                     box-shadow: #6d6b6b;
@@ -222,9 +241,6 @@ body {
                     } 
                 }
             }
-        }
-        .tips__row--color{
-            background-color: #e7e9e9;
         }   
     }    
 }
@@ -247,7 +263,7 @@ footer {
         "texto redes"; 
     .footer__titulo {
         color: #f7f6f1;
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-top: 40px;
         margin-bottom: 40px;
         text-align: center;
@@ -335,7 +351,7 @@ footer {
                     margin-top: 20px;
                     padding: 1px;
                     align-items: center;
-                    background-color: rgb(248, 242, 242);
+                    background-color: rgb(248, 244, 236);
                 }
                 .productos__contenedor__img--img {
                     width: 170px;
@@ -422,12 +438,12 @@ footer {
             padding: 15px;
             font-size: 1rem;
         }
-    }
-    .footer__redes{
-        margin: 0 auto;
-        margin-bottom: 2px;
-        margin-right: 80px;
-        font-size: .9em;
+        .footer__redes{
+            margin: 0 auto;
+            margin-bottom: 2px;
+            margin-right: 80px;
+            font-size: .9em;
+        }
     }
 }
 

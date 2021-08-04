@@ -15,6 +15,7 @@ $colortitle: #101414;
 }
 
 .recetas {
+    background-color:#ffffff;
     color: #101414;
     letter-spacing: 1px;
     line-height: 30px;
@@ -22,6 +23,7 @@ $colortitle: #101414;
     flex-direction: column;
     @include margin(10px, 20px);
     .recetas__cont{ 
+        background-image: url(../Imagenes/bgcolorwhite.png);
         .recetas__cont__titulo {
             font-size: 1.3em;
             font-weight: 600;
@@ -46,20 +48,23 @@ $colortitle: #101414;
         .recetas__cont__list li{
             list-style-type: circle;
         }
-        .recetas__cont__img{
-            width: 200px;
-            height: 220px;
-            object-fit: cover;
-            margin-top: 30px;
-            margin-left: 290px;
-            opacity: .9;
-            box-shadow: #6d6b6b;
-            -webkit-box-shadow: 2px 2px 6px #6d6b6b;
-            -moz-box-shadow: 2px 2px 6px #6d6b6b;
-            transition: all 1s;
-            &:hover {
-                -webkit-transform:scale(1.1);
-                transform:scale(1.1);
+        .recetas__cont__img {
+            display: flex;
+            justify-content: center;
+            .recetas__cont__img--img{
+                width: 200px;
+                height: 220px;
+                object-fit: cover;
+                margin-top: 30px;
+                opacity: .9;
+                box-shadow: #6d6b6b;
+                -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+                -moz-box-shadow: 2px 2px 6px #6d6b6b;
+                transition: all 1s;
+                &:hover {
+                    -webkit-transform:scale(1.1);
+                    transform:scale(1.1);
+                }
             }
         }
     }
@@ -115,11 +120,14 @@ $colortitle: #101414;
                 padding: 5px;
                 font-size: 1.2rem;
             }
-            .recetas__cont img {
-                width: 220px;
-                margin-left: 50px;
-                margin-right: 10px;
-                margin-bottom: 30px;
+            .recetas__cont__list li {
+                font-size: 1rem;
+            }
+            .recetas__cont__img {
+                .recetas__cont__img--img {
+                    width: 190px;
+                    margin-bottom: 30px;
+                }
             }
         }
     }

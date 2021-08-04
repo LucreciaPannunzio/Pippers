@@ -23,7 +23,7 @@
 <body>
     <div class="contenedorPadre">
         <header class="header"> <!--Inicio header-->
-            <a href="index.html"><img src="Imagenes/Logo2.png" alt="Logo Pippers" width="250px" class="header__imgLogo"></a>
+            <a href="index.html"><img src="Imagenes/Logo2.png" alt="Logo Pippers" class="header__imgLogo"></a>
             <nav class="navbar navbar-expand-lg navbar-dark header__menu">
               <div class="container-fluid header__menu__container">
                 <a class="navbar-brand" href="#"></a>
@@ -45,7 +45,7 @@
                       <a class="nav-link ul__li__link" href="paginas/recetas.html">Recetas</a>
                     </li>
                     <li class="nav-item ul__li">
-                      <a class="nav-link ul__li__link ul__li__link--contact" href="paginas/contacto.html">Contacto</a>
+                      <a class="nav-link ul__li__link" href="paginas/contacto.html">Contacto</a>
                     </li>      
                   </ul>
                 </div>
@@ -56,42 +56,47 @@
             <section class="productos">
                 <h1 class="productos__titulo">Nuestros productos</h1> 
                 <div class="row d-flex justify-content-center productos__contenedor">
-                  <div class="card p-3 m-3 shadow p-3 mb-5 bg-light rounded productos__contenedor__img" style="width: 15rem;">
+                  <div class="card p-3 m-3 shadow p-3 mb-5 rounded productos__contenedor__img" style="width: 15rem;">
                       <img src="Imagenes/EmpanadasBackground2.jpg" class="card-img-top productos__contenedor__img--img" alt="Empanadas-de-soja">
                       <div class="card-body productos__contenedor__img__text">
                         <p class="card-text">Empanadas de soja texturizada.</p>
                       </div>
+                      <a href="/paginas/tienda.html" class="btn btn-primary productos__contenedor__img__button">Comprar</a>
                   </div>
-                  <div class="card p-3 m-3 shadow p-3 mb-5 bg-light rounded productos__contenedor__img" style="width: 15rem;">
+                  <div class="card p-3 m-3 shadow p-3 mb-5 rounded productos__contenedor__img" style="width: 15rem;">
                       <img src="Imagenes/healthy-food.jpg" class="card-img-top productos__contenedor__img--img" alt="Hamburguesas-de-lentejas">
                       <div class="card-body">
                         <p class="card-text productos__contenedor__img__text">Hamburguesas de lentejas.</p>
                       </div>
+                      <a href="/paginas/tienda.html" class="btn btn-primary productos__contenedor__img__button">Comprar</a>
                   </div>
-                  <div class="card p-3 m-3 shadow p-3 mb-5 bg-light rounded productos__contenedor__img" style="width: 15rem;">
+                  <div class="card p-3 m-3 shadow p-3 mb-5 rounded productos__contenedor__img" style="width: 15rem;">
                       <img src="Imagenes/Pastas-caseras.jpg" class="card-img-top productos__contenedor__img--img" alt="Pastas">
                       <div class="card-body">
                         <p class="card-text productos__contenedor__img__text">Pastas caseras.</p>
                       </div>
+                      <a href="/paginas/tienda.html" class="btn btn-primary productos__contenedor__img__button">Comprar</a>
                   </div>
                 </div>  
                 <div class="row d-flex justify-content-center productos__contenedor">  
-                  <div class="card p-3 m-3 shadow p-3 mb-5 bg-light rounded productos__contenedor__img" style="width: 15rem;">
+                  <div class="card p-3 m-3 shadow p-3 mb-5 rounded productos__contenedor__img" style="width: 15rem;">
                     <img src="Imagenes/PizzaBackground.jpg" class="card-img-top productos__contenedor__img--img" alt="Pizzas-a-la-piedra">
                     <div class="card-body">
                       <p class="card-text productos__contenedor__img__text">Pizzas a la piedra.</p>
                     </div>
+                    <a href="/paginas/tienda.html" class="btn btn-primary productos__contenedor__img__button">Comprar</a>
                   </div>
-                  <div class="card p-3 m-3 shadow p-3 mb-5 bg-light rounded productos__contenedor__img" style="width: 15rem;">
+                  <div class="card p-3 m-3 shadow p-3 mb-5 rounded productos__contenedor__img" style="width: 15rem;">
                     <img src="Imagenes/mexsalsasdip.jpg" class="card-img-top productos__contenedor__img--img" alt="Dips-salsa-picante">
                     <div class="card-body">
                       <p class="card-text productos__contenedor__img__text">Dips de salsas.</p>
                     </div>
+                    <a href="/paginas/tienda.html" class="btn btn-primary productos__contenedor__img__button">Comprar</a>
                   </div>
                 </div>  
             </section>
             <section class="promos"> 
-                <h2 class="promos__titulo">Promos del mes<span class="badge bg-light text-dark badgePromos">New</span></h2>
+                <h2 class="promos__titulo">Promos del mes<span class="badge promos__badge">New</span></h2>
                 <div class="promos__contenedor">
                     <div class="promos__contenedor__promo">
                         <img src="Imagenes/Promo1.jpeg" alt="Promo1" width="200px;">
@@ -116,16 +121,14 @@
                   <h4 class="fw-bold tips__row__cont__text">Empanadas:</h4>
                   <ol class="tips__row__cont__list">       
                     <li>Descongelá la cantidad deseada a temperatura ambiente 10 minutos antes de meterlas en el horno.</li>
-                    <li>Dale un golpe de horno (en la parte de arriba) durante 15 minutos. Luego pasalas a la parte inferior durante unos 10 minutos.</li>
-                    <li>Si usás horno eléctrico, dejalas aproximadamente 20-25 minutos, dependiendo del color que desees darle.</li>
-                    <li> DATO: Podés acompañarlas con limón o salsa picante.</li>
+                    <li>Dale un golpe de horno durante 25 minutos aproximadamente.</li>
                   </ol>         
                 </div>  
                 <div class="col-3 tips__row__cont">
                   <img src="Imagenes/EmpanadasBackground2.jpg" alt="tips-empanadas" style="width: 11rem;" class="tips__row__cont__img">
                 </div>
               </div>
-              <div class="row tips__row tips__row--color">
+              <div class="row tips__row">
                 <div class="col-9 tips__row__cont"> 
                   <h4 class="fw-bold tips__row__cont__text">Hamburguesas:</h4>
                   <ol class="tips__row__cont__list">
@@ -150,7 +153,7 @@
                 <img src="Imagenes/PizzaBackground.jpg" alt="tips-pizzas" style="width: 10.5rem;" class="tips__row__cont__img">
                 </div>
               </div>
-              <div class="row tips__row tips__row--color">
+              <div class="row tips__row">
                 <div class="col-9 tips__row__cont">
                   <h4 class="fw-bold tips__row__cont__text">Pastas:</h4>
                   <ol class="tips__row__cont__list">
