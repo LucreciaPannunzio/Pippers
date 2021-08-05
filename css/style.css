@@ -15,6 +15,7 @@
   flex-wrap: wrap; }
   .aboutUs .aboutUs__container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
@@ -31,7 +32,12 @@
       text-align: center;
       font-weight: bold;
       margin-top: 30px;
-      margin-bottom: 50px; }
+      margin-bottom: 5px; }
+    .aboutUs .aboutUs__container .aboutUs__container__logo {
+      display: flex;
+      justify-content: center; }
+      .aboutUs .aboutUs__container .aboutUs__container__logo img {
+        width: 100px; }
     .aboutUs .aboutUs__container .aboutUs__container__description {
       margin-left: 50px;
       margin-right: 50px;
@@ -192,7 +198,7 @@
         color: #086964;
         font-weight: bold; }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__button {
-        background-color: #50CB93;
+        background-color: #9ddab8;
         border: none;
         color: black; }
 
@@ -620,7 +626,7 @@ body {
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img .productos__contenedor__img__text {
           text-align: center; }
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img .productos__contenedor__img__button {
-          background-color: #50CB93;
+          background-color: #9ddab8;
           border: none;
           color: black; }
   .contenedorMain .promos {
@@ -647,7 +653,7 @@ body {
     .contenedorMain .promos .promos__badge {
       margin-left: 10px;
       font-size: 1.1rem;
-      background-color: #50CB93;
+      background-color: #9ddab8;
       color: black; }
     .contenedorMain .promos .promos__contenedor .promos__contenedor__promo {
       display: flex;

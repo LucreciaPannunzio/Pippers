@@ -20,6 +20,7 @@ $colortitle: #101414;
     flex-wrap: wrap;
     .aboutUs__container{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 30px;
@@ -36,7 +37,14 @@ $colortitle: #101414;
             text-align: center;
             font-weight: bold;
             margin-top: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 5px;
+        }
+        .aboutUs__container__logo {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100px;
+            }
         }
         .aboutUs__container__description{
             margin-left: 50px;
