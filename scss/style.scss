@@ -351,7 +351,7 @@ footer {
                     margin-top: 20px;
                     padding: 1px;
                     align-items: center;
-                    background-color: rgb(248, 244, 236);
+                    background: #fdf6f6;
                 }
                 .productos__contenedor__img--img {
                     width: 170px;
@@ -363,6 +363,9 @@ footer {
                 .productos__contenedor__img__text{
                     font-size: .9rem;
                     text-align: center;
+                }
+                .productos__contenedor__img__button {
+                   font-size: .7rem;
                 }
             }
         }

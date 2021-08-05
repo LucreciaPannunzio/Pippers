@@ -811,7 +811,7 @@ footer {
           margin-top: 20px;
           padding: 1px;
           align-items: center;
-          background-color: #f8f4ec; }
+          background: #fdf6f6; }
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img--img {
           width: 170px;
           height: 210px;
@@ -821,6 +821,8 @@ footer {
         .contenedorMain .productos .productos__contenedor .productos__contenedor__img__text {
           font-size: .9rem;
           text-align: center; }
+        .contenedorMain .productos .productos__contenedor .productos__contenedor__img__button {
+          font-size: .7rem; }
     .contenedorMain .promos {
       width: 95%;
       margin: 10px;
