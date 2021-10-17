@@ -151,6 +151,19 @@
   margin-left: 50px;
   margin-right: 50px;
   padding: 20px; }
+  .buttonVerCarrito {
+    background-color: #9ddab8;
+    color:#101414;
+  }
+  .buttonVerCarrito:hover {
+    background-color:#6d6b6b;
+  }
+  #agregarProducto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: red;
+  }
   .pedido .pedido__titulo {
     font-size: 1.5rem;
     text-align: center;
@@ -183,9 +196,6 @@
       -webkit-box-shadow: 2px 2px 4px #6d6b6b;
       -moz-box-shadow: 2px 2px 4px #6d6b6b;
       transition: all 1s; }
-      .pedido .pedido__galeria .pedido__galeria__card:hover {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); }
       .pedido .pedido__galeria .pedido__galeria__card .pedido__galeria__card__img {
         width: 12rem;
         margin-left: 7px;
@@ -587,7 +597,9 @@ body {
   grid-template-rows: repeat(3, auto);
   grid-row-gap: 1px;
   grid-column-gap: 1px;
-  grid-template-areas: "productos productos promos" "productos productos promos" "tips tips tips"; }
+  grid-template-areas: "productos productos promos"
+ "productos productos promos"
+ "tips tips tips"; }
   .contenedorMain .productos {
     background-image: url(../Imagenes/bgcolorwhite.png);
     background-repeat: no-repeat;
@@ -738,7 +750,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "contactanos contactanos" "texto redes" "texto redes"; }
+  grid-template-areas: "contactanos contactanos"
+ "texto redes"
+ "texto redes"; }
   footer .footer__titulo {
     color: #f7f6f1;
     font-size: 1.1rem;
@@ -792,7 +806,9 @@ footer {
   .contenedorMain {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "productos" "promos" "tips"; }
+    grid-template-areas: "productos"
+ "promos"
+ "tips"; }
     .contenedorMain .productos {
       width: 95%;
       border: none;

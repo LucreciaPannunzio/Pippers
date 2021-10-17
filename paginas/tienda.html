@@ -49,13 +49,49 @@
     </header>
     <section class="pedido">
       <h1 class="pedido__titulo">Conocé nuestra tienda online!</h1>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary buttonVerCarrito" id="botonCarrito"data-bs-toggle="modal" data-bs-target="#exampleModal">Ver carrito</button>
+
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Carrito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Borrar</th>
+                  </tr>
+                </thead>
+                <tbody id="carrito">
+                  
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary buttonVerCarrito" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary buttonVerCarrito">Enviar</button>
+              <button type="button" class="btn btn-secondary buttonVerCarrito" id="btnVaciarCarrito">Vaciar carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row d-flex justify-content-center pedido__galeria">
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
           <img src="../Imagenes/EmpanadasBackground2.jpg" class="card-img-top pedido__galeria__card__img" alt="Empanadas-de-soja" style="height: 12rem;">
           <div class="card-body pedido__galeria__card__text">
             <p class="card-text">Empanadas de soja texturizada.</p>
             <p class="pedido__galeria__card__p">$600 (Docena)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-empanadas" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -63,7 +99,7 @@
           <div class="card-body pedido__galeria__card__text">
             <p class="card-text">Hamburguesas veganas.</p>
             <p class="pedido__galeria__card__p">$480 (Pack x 3)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-hamburguesas" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -72,7 +108,7 @@
             <p class="card-text">Pastas caseras.</p>
             <br>
             <p class="pedido__galeria__card__p">$400 (500 grs.)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-pastas" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -80,7 +116,7 @@
           <div class="card-body pedido__galeria__card__text">
             <p class="card-text">Milanesas de berenjenas.</p>
             <p class="pedido__galeria__card__p">$250 (2 unidades)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-milanesas" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -89,7 +125,7 @@
             <p class="card-text">Pizzas a la piedra.</p>
             <br>
             <p class="pedido__galeria__card__p">$350 (2 unidades)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-pizzas" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -98,7 +134,7 @@
             <p class="card-text">Dips varios.</p>
             <br>
             <p class="pedido__galeria__card__p">$250 (3 dips)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-dips" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -106,7 +142,7 @@
           <div class="card-body pedido__galeria__card__text">
             <p class="card-text">Guiso vegano de lentejas.</p>
             <p class="pedido__galeria__card__p">$480 (Porción)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-guiso" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
         <div class="card p-3 m-5 pedido__galeria__card" style="width: 15rem;">
@@ -114,10 +150,11 @@
           <div class="card-body pedido__galeria__card__text">
             <p class="card-text">Ravioles de zapallo asado.</p>
             <p class="pedido__galeria__card__p">$500 (Porción)</p>
-            <button type="button" class="btn pedido__galeria__card__button">Comprar</button>
+            <button type="button" class="btn pedido__galeria__card__button" id="button-ravioles" onclick="agregarAlCarrito(item.id)">Comprar</button>
           </div>
         </div>
       </div>
+      <p class="pedido" id="agregarProducto"></p>
       <div class="row p-2 d-flex justify-content-center pedido__cont">
         <div class="col-6 border-top shadow p-4 mb-5 bg-black rounded pedido__cont__tienda">
           <h2 class="pedido__cont__tienda__titulo">Hacé tu pedido</h2>
@@ -149,7 +186,9 @@
       </div>
     </footer>
 
+    <script src="../js/jquery-3.6.0.js"></script>
     <script src="../js/pippers.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
